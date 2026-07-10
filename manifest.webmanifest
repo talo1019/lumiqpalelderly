@@ -1,0 +1,13 @@
+{
+  "name": "LumiqPal Family Companion",
+  "short_name": "LumiqPal",
+  "description": "A calmer family companion for every generation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f2",
+  "theme_color": "#f8f7f2",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/assets/app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
