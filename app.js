@@ -43,7 +43,7 @@ function nav(role) {
     ? [['home','Home',icons.home],['family','Family',icons.user],['settings','Settings',icons.settings]]
     : role === 'kid'
       ? [['home','Home',icons.home],['talk','Lumi',icons.mic],['profile','Me',icons.user]]
-      : [['home','Home',icons.home],['today','Today',icons.calendar],['family','Family',icons.user]];
+      : [['home','Home',icons.home],['today','Today',icons.calendar],['profile','Me',icons.user]];
   return `<nav class="simple-nav" aria-label="Main navigation">${items.map(([id,label,icon]) => `<button type="button" data-nav="${id}" class="${state.activeNav === id ? 'active' : ''}">${icon}${label}</button>`).join('')}</nav>`;
 }
 
@@ -56,24 +56,24 @@ function elderHome() {
       <span class="sun-orb" aria-hidden="true"></span>
       <div class="weather"><b>27°</b><small>Sunny</small></div>
     </section>
-    <div class="section-label"><h3>What would you like?</h3></div>
-    <section class="primary-actions" aria-label="Main actions">
-      <button class="action-card call" type="button" data-action="call">
-        <span class="action-icon">${icons.phone}</span><span><strong>Call family</strong><small>See and talk to someone</small></span>
-      </button>
-      <button class="action-card talk" type="button" data-action="talk">
-        <span class="action-icon">${icons.mic}</span><span><strong>Talk to Lumi</strong><small>Ask me anything</small></span>
-      </button>
-      <button class="action-card help" type="button" data-action="help">
-        <span class="action-icon">${icons.heart}</span><span><strong>I need help</strong><small>Let your family know</small></span><span class="chevron">›</span>
-      </button>
-    </section>
     <div class="section-label"><h3>One reminder</h3><span>10:00 AM</span></div>
     <article class="reminder-card">
       <span class="reminder-icon">${icons.pill}</span>
       <div class="reminder-copy"><strong>Morning medicine</strong><span>1 white tablet · after food</span></div>
       <button class="tiny-button ${state.medicationTaken ? 'done' : ''}" type="button" data-action="medication">${state.medicationTaken ? 'Done ✓' : 'I took it'}</button>
-    </article>${nav('elder')}`;
+    </article>
+    <div class="section-label"><h3>What would you like?</h3></div>
+    <section class="primary-actions" aria-label="Main actions">
+      <button class="action-card talk featured-action" type="button" data-action="talk">
+        <span class="action-icon">${icons.mic}</span><span><strong>Talk to Lumi</strong><small>Ask me anything</small></span>
+      </button>
+      <button class="action-card call" type="button" data-action="call">
+        <span class="action-icon">${icons.phone}</span><span><strong>Call family</strong><small>See and talk to someone</small></span>
+      </button>
+      <button class="action-card help" type="button" data-action="help">
+        <span class="action-icon">${icons.heart}</span><span><strong>I need help</strong><small>Let your family know</small></span>
+      </button>
+    </section>${nav('elder')}`;
 }
 
 function adminHome() {
