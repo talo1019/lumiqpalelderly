@@ -1,4 +1,4 @@
-const CACHE = 'lumiqpal-v3';
+const CACHE = 'lumiqpal-v4';
 const ASSETS = ['/', '/index.html', '/styles.css', '/app.js', '/manifest.webmanifest', '/assets/app-icon.svg'];
 
 self.addEventListener('install', event => {

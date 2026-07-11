@@ -184,13 +184,15 @@ button:focus-visible { outline: 3px solid #72937f; outline-offset: 2px; }
 .action-card:active { transform: scale(.975); }
 .action-card.call { background: var(--sage); color: var(--sage-deep); }
 .action-card.talk { background: var(--peach); color: var(--peach-deep); }
-.action-card.help { grid-column: 1 / -1; min-height: 105px; flex-direction: row; align-items: center; background: #fff; color: #9d3a32; border: 1px solid #efd7d2; }
+.action-card.featured-action { grid-column: 1 / -1; min-height: 190px; padding: 21px; }
+.action-card.featured-action .action-icon { width: 54px; height: 54px; }
+.action-card.featured-action strong { font-size: 29px; }
+.action-card.help { background: #fff0ed; color: #9d3a32; border: 1px solid #efd7d2; }
 .action-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.66); }
 .action-icon svg { width: 25px; height: 25px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .action-card strong { display: block; font-family: Georgia, serif; font-size: 24px; font-weight: 400; line-height: 1.05; }
 .action-card small { display: block; margin-top: 5px; color: currentColor; opacity: .76; font-size: 13px; line-height: 1.25; }
-.action-card.help strong { font-family: inherit; font-size: 19px; font-weight: 750; }
-.action-card.help .chevron { margin-left: auto; font-size: 24px; }
+.action-card.help strong { font-size: 22px; }
 
 .reminder-card { display: flex; align-items: center; gap: 13px; padding: 15px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.78); }
 .reminder-icon { width: 43px; height: 43px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 14px; color: #765d38; background: #f3eadc; }
