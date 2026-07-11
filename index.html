@@ -16,50 +16,25 @@
   </head>
   <body>
     <main class="showcase">
-      <section class="story" aria-label="LumiqPal product introduction">
-        <div class="brand-lockup">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span>LumiqPal</span>
-        </div>
-        <div class="story-copy">
-          <p class="eyebrow">One family. Three thoughtful modes.</p>
-          <h1>Care should feel<br /><em>this simple.</em></h1>
-          <p class="lede">A warm, shared companion that meets every family member at their level — with Grandma first.</p>
-          <div class="role-notes" aria-label="Interface modes">
-            <div><span>01</span><strong>Family</strong><small>Overview & care</small></div>
-            <div><span>02</span><strong>Kids</strong><small>Play & learn</small></div>
-            <div class="is-active"><span>03</span><strong>Grandma</strong><small>Calm & clear</small></div>
-          </div>
-        </div>
-        <img class="device-render" src="/assets/lumiqpal-device.png" alt="LumiqPal holographic companion device" />
-        <p class="prototype-note">Interactive iOS concept · installable web app</p>
-      </section>
-
       <section class="demo-stage" aria-label="Interactive app preview">
-        <div class="demo-toolbar">
-          <div>
-            <span class="live-dot" aria-hidden="true"></span>
-            Live prototype
+        <div class="device-frame" aria-label="iPhone 17 Pro Max">
+          <span class="side-control action-control" aria-hidden="true"></span>
+          <span class="side-control volume-up" aria-hidden="true"></span>
+          <span class="side-control volume-down" aria-hidden="true"></span>
+          <span class="side-control camera-control" aria-hidden="true"></span>
+          <div class="phone" id="app" data-role="elder">
+            <div class="status-bar" aria-hidden="true">
+              <span id="status-time">9:41</span>
+              <span class="dynamic-island"></span>
+              <span class="status-icons">
+                <svg viewBox="0 0 24 24"><path d="M3 18h2v3H3zm4-4h2v7H7zm4-4h2v11h-2zm4-4h2v15h-2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 18.5 15 15.6a4.2 4.2 0 0 0-6 0l3 2.9Zm-6-5.8 1.5 1.5a6.4 6.4 0 0 1 9 0l1.5-1.5a8.5 8.5 0 0 0-12 0Zm-3-3 1.5 1.5a10.6 10.6 0 0 1 15 0L21 9.7a12.7 12.7 0 0 0-18 0Z"/></svg>
+                <span class="battery"><i></i></span>
+              </span>
+            </div>
+            <div id="screen" class="screen" aria-live="polite"></div>
+            <div class="home-indicator" aria-hidden="true"></div>
           </div>
-          <div class="mode-switcher" role="group" aria-label="Preview an interface">
-            <button type="button" data-role-switch="admin">Family</button>
-            <button type="button" data-role-switch="kid">Kids</button>
-            <button type="button" data-role-switch="elder" class="active">Grandma</button>
-          </div>
-        </div>
-
-        <div class="phone" id="app" data-role="elder">
-          <div class="status-bar" aria-hidden="true">
-            <span id="status-time">9:41</span>
-            <span class="dynamic-island"></span>
-            <span class="status-icons">
-              <svg viewBox="0 0 24 24"><path d="M3 18h2v3H3zm4-4h2v7H7zm4-4h2v11h-2zm4-4h2v15h-2z"/></svg>
-              <svg viewBox="0 0 24 24"><path d="M12 18.5 15 15.6a4.2 4.2 0 0 0-6 0l3 2.9Zm-6-5.8 1.5 1.5a6.4 6.4 0 0 1 9 0l1.5-1.5a8.5 8.5 0 0 0-12 0Zm-3-3 1.5 1.5a10.6 10.6 0 0 1 15 0L21 9.7a12.7 12.7 0 0 0-18 0Z"/></svg>
-              <span class="battery"><i></i></span>
-            </span>
-          </div>
-          <div id="screen" class="screen" aria-live="polite"></div>
-          <div class="home-indicator" aria-hidden="true"></div>
         </div>
       </section>
     </main>

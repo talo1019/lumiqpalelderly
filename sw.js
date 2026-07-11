@@ -1,5 +1,5 @@
-const CACHE = 'lumiqpal-v2';
-const ASSETS = ['/', '/index.html', '/styles.css', '/app.js', '/manifest.webmanifest', '/assets/app-icon.svg', '/assets/lumiqpal-device.png'];
+const CACHE = 'lumiqpal-v3';
+const ASSETS = ['/', '/index.html', '/styles.css', '/app.js', '/manifest.webmanifest', '/assets/app-icon.svg'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
